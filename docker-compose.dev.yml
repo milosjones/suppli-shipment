@@ -1,0 +1,12 @@
+services:
+  api:
+    volumes:
+      - ./backend:/var/www/html
+      - /var/www/html/vendor
+      - import-files:/var/www/html/storage/app/private/imports
+
+  worker:
+    volumes:
+      - ./backend:/var/www/html
+      - /var/www/html/vendor
+      - import-files:/var/www/html/storage/app/private/imports
